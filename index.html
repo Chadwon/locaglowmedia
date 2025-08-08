@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalGlow Media</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background-color: #f9fafb; color: #333; }
+        header { background-color: #FFD700; padding: 20px; text-align: center; }
+        header h1 { margin: 0; color: #222; }
+        nav { background-color: #222; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a:hover { color: #FFD700; }
+        .hero { padding: 60px 20px; text-align: center; background: linear-gradient(to right, #FFD700, #ff9a00); color: white; }
+        .hero h2 { margin-bottom: 15px; font-size: 2rem; }
+        .hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto; }
+        .section { padding: 40px 20px; text-align: center; }
+        .services { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        .service-card { background-color: white; border-radius: 8px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 250px; }
+        .service-card h3 { margin-top: 0; color: #ff9a00; }
+        .lead-magnet { background-color: #fff3cd; padding: 30px; border-radius: 8px; max-width: 600px; margin: 0 auto; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        .lead-magnet img { max-width: 100%; border-radius: 8px; margin-bottom: 15px; }
+        .lead-magnet input[type="email"] { padding: 10px; width: 70%; border: 1px solid #ccc; border-radius: 4px; }
+        .lead-magnet button { padding: 10px 20px; background-color: #ff9a00; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        .lead-magnet button:hover { background-color: #e68a00; }
+        .blog-preview { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        .blog-card { background-color: white; border-radius: 8px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 300px; text-align: left; }
+        .blog-card h4 { margin-top: 0; color: #ff9a00; }
+        form { max-width: 500px; margin: 0 auto; text-align: left; }
+        form label { display: block; margin-top: 10px; }
+        form input, form textarea { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; }
+        form button { margin-top: 15px; padding: 10px 20px; background-color: #ff9a00; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        form button:hover { background-color: #e68a00; }
+        footer { background-color: #222; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+        footer a { color: #FFD700; margin: 0 10px; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LocalGlow Media</h1>
+        <p>Shining a spotlight on your local business</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Grow Your Local Business With Social Media</h2>
+        <p>We help salons, barbershops, real estate agents, and more attract local customers with smart, engaging content strategies.</p>
+    </section>
+    <section class="section" id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>Content Strategy</h3>
+                <p>Custom social media plans tailored to your business goals.</p>
+            </div>
+            <div class="service-card">
+                <h3>Full Social Media Management</h3>
+                <p>We handle your posting, engagement, and growth.</p>
+            </div>
+            <div class="service-card">
+                <h3>Consulting Sessions</h3>
+                <p>1-on-1 sessions to boost your online presence.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="lead-magnet">
+        <h2>Free Guide: 10 Post Ideas for Salons</h2>
+        <div class="lead-magnet">
+            <img src="assets/pdf-mockup.png" alt="PDF Mockup">
+            <p>Get our free PDF with proven post ideas to boost engagement and attract local clients.</p>
+            <form action="https://app.convertkit.com/forms/8412359/subscriptions" method="post">
+                <input type="email" name="email_address" placeholder="Enter your email" required>
+                <button type="submit">Get My Free Guide</button>
+            </form>
+        </div>
+    </section>
+    <section class="section" id="blog">
+        <h2>From Our Blog</h2>
+        <div class="blog-preview">
+            <div class="blog-card">
+                <h4>5 Instagram Tips for Local Salons</h4>
+                <p>Learn how to attract more customers through your Instagram profile.</p>
+            </div>
+            <div class="blog-card">
+                <h4>Content Planning Made Easy</h4>
+                <p>Simple steps to keep your social media active without burning out.</p>
+            </div>
+            <div class="blog-card">
+                <h4>Boosting Your Local SEO</h4>
+                <p>How to get found on Google by customers in your area.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="contact">
+        <h2>Contact Us</h2>
+        <form action="https://formsubmit.co/chadwonlouw0@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="thank-you.html">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2025 LocalGlow Media. All rights reserved.</p>
+        <p><a href="#">Instagram</a> | <a href="#">YouTube</a> | <a href="#">TikTok</a></p>
+    </footer>
+</body>
+</html>
